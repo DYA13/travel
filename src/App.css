@@ -1,38 +1,128 @@
-.App {
+
+body {
+margin: 0;
+background-color: #E0E8F6;
+
+
+}
+.container {
+background-image: url("https://images.unsplash.com/photo-1505228395891-9a51e7e86bf6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1633&q=80");
+background-color: #cccccc;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow-x:hidden;
+}
+
+.box {
+  text-align: center;
+  position: absolute;
+  top: 70%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+
+}
+h1 {
+ 
+  font-family: 'Open Sans', sans-serif;
+  font-size: 34px;
+  line-height: 42px;
+  font-weight: 300;
+}
+h3 {
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  line-height: 22px;
+}
+.containerTwo {
+ display: flex;
+ flex-direction: row;
+  height: 500px;
+  margin: 30px;
+
+}
+h2 {
+font-family: 'Nunito', sans-serif;
+color: #000543;
+line-height: 42px;
+font-size: 34px;
+}
+.author {
+  font-family: 'Roboto', sans-serif;
+  color: #000543;
+  line-height: 22px;
+  font-size: 16px;
+  
+}
+h4 {
+  font-family: 'Nunito', sans-serif;
+  line-height: 44px;
+  font-size: 40px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h5 {
+font-size: 25px;
+font-family: 'Nunito', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.foto {
+  width: 600px;
+  height: 500px;
+  opacity: 0.7;
+  border-radius: 50px 20px;
+  box-shadow: 5px 8px #888888;
 }
+.quoteBox {
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin: 30px;
+padding: 30px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.containerDestinations {
+  background-image: url("https://images.unsplash.com/photo-1586108327573-ac038944e95d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80");
+background-position: center;
+
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+flex-direction: column;
+align-items: center;
+}
+
+.containerButtons {
+display: flex;
+flex-direction: row;
+position: relative;
+align-items: center;
+}
+button {
+
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: transparent;
   color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bolder;
+
+}
+.btnOne{
+  position: absolute;
+  top: 50%;
+  left: 10%;
+
+}
+.btnTwo{
+  position: absolute;
+  top: 50%;
+  left: 90%;
+
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
