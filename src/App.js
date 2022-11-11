@@ -1,6 +1,6 @@
 import { useState } from "react";
 import {data} from "./data";
-import {dataTwo} from "./dataTwo";
+
 import imageOne from './Mounteen.jpg';
 import './App.css';
 
@@ -19,6 +19,7 @@ function App() {
       return foto;
     }))
   }
+  
   const nextFoto =() => {
     setFoto((foto => {
       foto ++;
@@ -28,15 +29,8 @@ function App() {
       return foto;
     }))
 
-    const [country, setCountry] = useState(dataTwo);
-    
-
-console.log(country)
-
-    const removeCountry = (id) => {
-    let newCountry= country.filter(element => element.id !==id);
-    setCountry(newCountry);
-  }
+  
+  
   }
 
   return (
@@ -74,36 +68,7 @@ console.log(country)
 
 {/* Remove countries */}
 
-<div>
 
-<div> 
-<h6> Promo {country.length}  </h6>
-console.log(country)
-</div>
-
-{country.map((elem => {
-  const {id, paese, photo} = elem;
-  return(
-    <div key={id}>
-    <div>
-      <h2>{id} - {paese}</h2>
-    </div>
-
-    <div>
-      <img src={photo} width="400px" alt="country"/>
-    </div>
-    <div>
-      <button on Click={()=>removeCountry(id)}>Remove</button>
-    </div>
-
-    </div>
-  )
-}))}
-<div>
-  <button onClick={()=> setCountry([])}>Delete all</button>
-</div>
-
-</div>
 
     </div>
   );
